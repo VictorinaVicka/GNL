@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/19 14:35:52 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/24 16:47:04 by tfarenga         ###   ########.fr       */
+/*   Created: 2020/05/23 18:11:49 by tfarenga          #+#    #+#             */
+/*   Updated: 2020/05/24 16:00:22 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include  "get_next_line_bonus.h"
 
 int	ft_test_line(char *quantity_fd)
 {
@@ -65,10 +65,10 @@ int	get_next_line(int fd, char **line)
 {
 	static char	*quantity_fd[FD];
 	char		*buffer;
-	int			read_files;
+	ssize_t		read_files;
 	int			test_line;
 
-	if ((line == 0) || (fd < 0) || (BUFFER_SIZE <= 0))
+	if (fd < 0 || line == 0 || BUFFER_SIZE <= 0)
 		return (-1);
 	if (!(buffer = malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 		return (-1);

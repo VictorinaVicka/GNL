@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/19 14:30:01 by tfarenga          #+#    #+#             */
-/*   Updated: 2020/05/23 18:10:11 by tfarenga         ###   ########.fr       */
+/*   Created: 2020/05/23 17:57:57 by tfarenga          #+#    #+#             */
+/*   Updated: 2020/05/24 17:44:43 by tfarenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE
-# define GET_NEXT_LINE
+#ifndef GET_NEXT_LINE_BONUS
+# define GET_NEXT_LINE_BONUS
 
-# include <unistd.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 3
+#  define BUFFER_SIZE 6
 # endif
 
 # define FD 1024
